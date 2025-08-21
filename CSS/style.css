@@ -1,0 +1,198 @@
+/*
+seletor universal de todas as tags = "*"
+Reset CSS - reinicia todas as propriedades dos elementos/tags
+*/
+
+* {
+
+    margin: 0;
+    /* zera o espaçamento interno de todas as caixas */
+
+    padding: 0;
+    /* zera o espaçamento externo de todas as caixas */
+
+    box-sizing: 0;
+    /* wildth é contado direto da borda da caixa */
+
+}
+
+.layout-grid {
+
+    width: 100%;
+    /* largura da caixa div */
+    max-width: 1000px;
+    /* limita a largura da caixa */
+    margin: 0 auto;
+    /* topo e baixo 0 - laterais automática*/
+    background-color: transparent;
+
+    /* border: 3px dashed red; */
+}
+
+.header-flex {
+    display: flex;
+    /* elementos ficam em linha com o flex */
+    justify-content: space-between;
+    /* alinha os elementos de acordo com a linha */
+    align-items: center;
+    /* alinha os elementos em coluna - contrário do justify content */
+
+}
+
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #bdbbbb;
+
+}
+
+
+header {
+
+    background-color: #282828;
+
+}
+
+
+
+h1 {
+
+    color: white;
+    font-weight: 100;
+    font-family: 'Courier';
+    transition: color 0.5s;
+
+
+    span {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
+nav {
+    display: flex;
+    color: #e2e2e2;
+    width: 200px;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+
+}
+
+a {
+
+    display: flex;
+    color: #e2e2e2;
+    /* cor da fonte */
+    display: flex;
+    /* cor de fundo de caixa do link */
+    width: 200px;
+    /* largura da fonte */
+    height: 100%;
+    justify-content: space-evenly;
+    /* alinha o conteúdo */
+    align-items: center;
+    /* alinha o conteúdo - sentido contrario do "justify content"*/
+    text-decoration: none;
+    /* tira a decoração do texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* fonte das letras */
+    font-weight: 100;
+    /* grossura da fonte */
+    transition: background-color 0.5s;
+
+}
+
+a:hover {
+
+    background-color: rgb(255, 132, 0);
+    /* cor de fundo da caixa do link ao passar do mouse */
+
+}
+
+h1:hover {
+
+
+    color: rgb(130, 130, 130);
+    cursor: pointer;
+
+}
+
+/* -------------------------------------------- MAIN -------------------------------------------- */
+main {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+    main section.cores-harmonia {
+        width: 80%;
+        background-color: rgb(255, 255, 255);
+        
+
+    }
+
+    main section.cores-harmonia p:last-of-type
+{
+margin-bottom: 30px;
+}
+
+main section.cores-harmonia h2:first-of-type
+{
+margin-top: 40px;
+}
+
+    main section.cores-harmonia h2,
+    main section.cores-harmonia p{
+
+    margin-top: 20px;
+    margin-right:20px;
+    margin-left :20px;
+    }
+
+    main section.cores-harmonia #img-lapis{
+
+    width: 100%;
+    }
+
+
+
+    main aside.acoes-laterais {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 600px;
+        width: 15%;
+        background-color: whitesmoke;
+
+    }
+
+    .main-flex
+{
+
+    display: flex;
+    justify-content: space-between; /* centraliza no sentido do eixo */
+    align-items: center; /* centraliza no sentido contrário do eixo */
+    flex-direction: row; /* eixo padrão */
+    flex-wrap:wrap;
+
+}
+
+
+
+/* -------------------------------------------- Footer -------------------------------------------- */
+
+footer{
+
+display: flex;
+align-items: center;
+background-color: #282828;
+color: #e2e2e2;
+height: 50px;
+width: 100%;
+
+}
